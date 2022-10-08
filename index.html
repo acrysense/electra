@@ -530,7 +530,7 @@
 											</div>
 											<div class="c-details products__details">
 												<picture class="c-details__img">
-													<img src="img/hub.png" alt="Image">
+													<img src="img/bosch.jpeg" alt="Image">
 												</picture>
 												<div class="c-details__body">
 													<h3 class="c-details__title">Bosch Performance Line</h3>
@@ -539,7 +539,7 @@
 											</div>
 											<div class="c-details products__details">
 												<picture class="c-details__img">
-													<img src="img/cable.png" alt="Image">
+													<img src="img/inner-battery.png" alt="Image">
 												</picture>
 												<div class="c-details__body">
 													<h3 class="c-details__title">Bosch PowerPack 500</h3>
@@ -1065,17 +1065,22 @@
 							<h2 class="test-drive__title">Fill out the form for a test drive</h2>
 							<p class="test-drive__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu blandit lectus neque ac ac. Duis adipiscing in tincidunt lacinia in sit arcu neque. Ullamcorper arcu sem metus, mauris. Urna pellentesque faucibus etiam maecenas. Aliquam viverra euismod tristique massa neque ultricies sed eu. Fringilla ut porta ipsum erat aliquam viverra in.</p>
 							<form action="#" class="td-form test-drive__form">
+								<!-- Hidden Required Fields -->
+								<input type="hidden" name="project_name" value="ELECTRA" />
+								<input type="hidden" name="admin_email" value="victor_marketing@electrabike.ru" />
+								<input type="hidden" name="form_subject" value="Заявка с сайта ELECTRA" />
+								<!-- END Hidden Required Fields -->
 								<div class="input-control td-form__input">
 									<label for="td-email" class="input-control__label">enter Your mail</label>
-									<input type="email" id="td-email" class="input-control__input" placeholder="@mail">
+									<input type="email" id="td-email" class="input-control__input" placeholder="@mail" name="Email">
 								</div>
 								<div class="input-control td-form__input">
 									<label for="td-name" class="input-control__label">enter Your name</label>
-									<input type="text" id="td-namee" class="input-control__input" placeholder="name" required>
+									<input type="text" id="td-namee" class="input-control__input" placeholder="name" name="Name" required>
 								</div>
 								<div class="input-control td-form__input">
 									<label for="td-phone" class="input-control__label">enter Your phone number</label>
-									<input type="text" id="td-phone" class="input-control__input" placeholder="phone number" data-inputmask="'mask': '123 999-99-99'" required>
+									<input type="text" id="td-phone" class="input-control__input" placeholder="phone number" data-inputmask="'mask': '123 999-99-99'" name="Phone" required>
 								</div>
 								<button class="td-form__btn btn btn--transparent">free test drive</button>
 							</form>
@@ -1167,7 +1172,7 @@
 						</picture>
 						<div class="contacts__block">
 							<h3 class="contacts__title">address</h3>
-							<address class="contacts__elem">Unit SM005 - Bluewaters Island - Dubai - ОАЭ</address>
+							<address class="contacts__elem">Unit SM005 - Bluewaters Island - Dubai - UAE</address>
 						</div>
 						<div class="contacts__block">
 							<h3 class="contacts__title">@MAIL</h3>
@@ -1240,6 +1245,7 @@
 	<!-- end of wrapper -->
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 	<script src="js/app.min.js"></script>
 </body>
 
