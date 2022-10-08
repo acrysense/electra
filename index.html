@@ -250,17 +250,22 @@
 							<h3 class="interested__title">Fill out the form for a test drive</h3>
 						</div>
 						<form action="#" class="td-interested-form interested__form">
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="ELECTRA" />
+							<input type="hidden" name="admin_email" value="victor_marketing@electrabike.ru" />
+							<input type="hidden" name="form_subject" value="Заявка с сайта ELECTRA" />
+							<!-- END Hidden Required Fields -->
 							<div class="input-control td-interested-form__input">
 								<label for="td-email" class="input-control__label">enter Your mail</label>
-								<input type="email" id="td-email" class="input-control__input" placeholder="@mail">
+								<input type="email" id="td-email" class="input-control__input" placeholder="@mail" name="Email">
 							</div>
 							<div class="input-control td-interested-form__input">
 								<label for="td-name" class="input-control__label">enter Your name</label>
-								<input type="text" id="td-namee" class="input-control__input" placeholder="name" required>
+								<input type="text" id="td-namee" class="input-control__input" placeholder="name" name="Name" required>
 							</div>
 							<div class="input-control td-interested-form__input">
 								<label for="td-phone" class="input-control__label">enter Your phone number</label>
-								<input type="text" id="td-phone" class="input-control__input" placeholder="phone number" data-inputmask="'mask': '123 999-99-99'" required>
+								<input type="text" id="td-phone" class="input-control__input" placeholder="phone number" data-inputmask="'mask': '123 999-99-99'" name="Phone" required>
 							</div>
 							<button class="td-interested-form__btn btn btn--transparent">free test drive</button>
 						</form>
@@ -772,7 +777,7 @@
 										<span class="products__promo-name">Kids</span>
 										<span class="products__promo-model">tepover</span>
 										<div class="products__top">
-											<h3 class="products__title">Townie 5 IS tepover</h3>
+											<h3 class="products__title">Kids</h3>
 											<p class="products__description">
 												A stylish cruise ship for the youngest. Fun is just as important as serious stuff. <br>
 												Therefore, Electra children's bicycles are in no way inferior to adults: <br>
